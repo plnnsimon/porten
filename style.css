@@ -1,0 +1,775 @@
+@font-face {
+	font-family: 'Post No Bills Jaffna';
+	src: url('./fonts/PostNoBillsJaffna-Bold.eot');
+	src: local('☺'), url('fonts/PostNoBillsJaffna-Bold.woff') format('woff'), url('fonts/PostNoBillsJaffna-Bold.ttf') format('truetype'), url('fonts/PostNoBillsJaffna-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: #000000;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    width: 100%;
+    min-height: 100vh;
+}
+body.lock {
+    overflow: hidden;
+}
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header > * {
+    transition: all .3s ease .3s;
+    padding: 0 10%;
+}
+
+.top-line {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: #000000;
+}
+
+.top-line-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+}
+
+.log-in {
+    cursor: pointer;
+}
+.top-line span {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+.phone-icon {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    color: #969696;
+}
+
+.top-line-log-in {
+    align-items: center;
+    display: flex;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    padding: 0 10px;
+}
+
+.second-line {
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+
+    background: #0F0F0F;
+}
+
+.second-line h2 {
+    font-family: 'Post No Bills Jaffna';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #FFFFFF;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav a {
+    align-self: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696;
+    padding: 30px 10px;
+    margin: 0 auto;
+}
+.nav a:hover {
+    color: #FFFFFF;
+    background: #1f1f1fb2;
+    transition: ease .5s;
+    cursor: pointer;
+}
+/* .nav img {
+    padding: 30px 10px;
+    margin: 0;
+} */
+.nav img:hover {
+    color: #FFFFFF;
+    background: #1F1F1F;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.first-section {
+    background-image: url("./photos/main-photo.png");
+    background-size: cover;
+    background-position: center;
+    font-family: PT Sans;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 100px;
+    height: auto;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    
+    border: 4px solid white;
+    
+}
+.logo-top {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-family: 'Post No Bills Jaffna';
+    font-style: normal;
+    font-weight: bold;
+}
+.logo-inner hr {
+    width: 100%;
+}
+.logo-bottom {
+    font-family: PT Sans, sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 70%;
+    padding: 40px 50px 10%;
+}
+
+.second-section {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    min-height: 730px;
+}
+.new-season-left {
+    flex: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+.new-season-left-text span {
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 36px;;
+    text-transform: uppercase;
+}
+.new-season-left-text hr {
+    margin: 20px auto;
+    width: 120px;
+}
+.first-slier {
+    max-width: 600px;
+}
+.cards-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.cards {
+    min-width: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+}
+.card-img {
+    width: 100%;
+}
+.card img {
+    background: #191B1C;
+    width: 100%;
+    padding: 20% 0;
+    cursor: pointer;
+}
+.card-text {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.new-season-right {
+    background-image: url('./photos/new-season-pick.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 45%;
+}
+
+.new-season-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+    align-items: center;
+
+}
+.new-season-right-content hr {
+    width: 120px;
+    margin: 30px 0;
+    
+}
+.new-season-right-content span {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.catalog {
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    border: 3px solid white;
+    padding: 10px 20px;
+}
+.catalog:hover {
+    background: #b4b4b486;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.third-section {
+    font-family: "PT Sans", serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    height: auto;
+}
+
+.old-collection {
+    background-image: url("./photos/suit.png");
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex: 55%;
+    min-height: 730px;
+}
+.old-collection img {
+    width: 100%;
+}
+.old-collection-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex: 45%;
+    width: 100%;
+    padding: 0 5rem;
+}
+.old-collection-content hr {
+    margin: 2rem 0;
+    width: 120px;
+}
+.old-collection-content-title {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.old-collection-content-text {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 0.875rem;
+}
+.old-collection-btn {
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+}
+.old-collection-btn:hover {
+    background: #b4b4b486;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.fourth-section {
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.new-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+    max-width: 1120px;
+}
+.new-card {
+    max-width: 260px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.new-card img {
+    background: #191B1C;
+    width: 100%;
+    padding: 20% 0;
+    cursor: pointer;
+}
+.fourth-section-text {
+    margin: 2rem 0 2rem 0;
+    font-weight: 700;
+    font-size: 36px;
+}
+.fourth-section hr {
+    width: 120px;
+    margin-bottom: 2rem;
+}
+.brands-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items:center;
+    background: #0F0F0F;
+    min-height: 360px;
+}
+.brands-section span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    padding: 2rem 0;
+}
+.brands-section hr {
+    width: 120px;
+}
+.brands-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands-container div {
+    margin: 1rem 1rem;
+}
+.brands-container div img {
+    width: 100%;
+}
+.new-cards-container {
+    padding: 0 10%;
+}
+
+.registration {
+    display: none !important;
+}
+.menu-burger {
+    display: none;
+}
+.menu-burger-container {
+    display: none;
+}
+.slider {
+    display: none;
+}
+
+footer {
+    background-image: url("./photos/footer.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 10% 0;
+}
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.333%;
+    margin: 0 1rem 0 0;
+}
+.footer-about span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.footer-about p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+.footer-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.333%;
+    margin: 0 1rem;
+}
+.footer-categories span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.categories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.categories button {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: #0F0F0F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+}
+.categories button:hover {
+    background: rgba(136, 136, 136, 0.575);
+    transition: all .3s;
+}
+.footer-connection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.333%;
+    margin: 0 1rem;
+}
+.footer-connection span {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.footer-connection p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+.footer-connection .email {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.footer-connection .email input {
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+    padding: 5px;
+}
+.footer-connection .email input::placeholder {
+    color: rgb(192, 192, 192);
+    margin-left: 1rem;
+}
+
+.footer-connection .email button {
+    border: none;
+    background: #0F0F0F;
+    color: white;
+    padding: 10px 20px;
+}
+.footer-connection .email button:hover {
+    background: rgba(136, 136, 136, 0.575);
+    transition: all .3s;
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+.copyright span:first-child {
+    font-weight: normal;
+}
+.copyright span:last-child {
+    font-weight: bold;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1100px) {
+    .new-cards {
+        max-width: 900px;
+    }
+    .new-card {
+        max-width: 200px;
+    }
+    .new-cards-container {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .new-season-left-text hr {
+        margin: 20px auto 30px;
+    }
+    .second-section {
+        flex-direction: column;
+    }
+    .third-section {
+        flex-direction: column-reverse;
+    }
+    .old-collection {
+        background-size: cover;
+        height: 500px;
+    }
+    .new-season-right-content {
+        margin-top: 3rem;
+    }
+    .new-season-right {
+        background-position: top;
+    }
+    
+    header > * {
+        transition: all .3s ease .3s;
+        padding: 0 10%;
+    }
+    
+    .menu-burger-container {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 40px;
+        height: 40px;
+    }
+    .menu-burger {
+        left: 0;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .menu-burger span,
+    .menu-burger::before,
+    .menu-burger::after {
+        right: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all .3s ease;
+        background: #fff;
+    }
+    .menu-burger::before,
+    .menu-burger::after {
+        content: "";
+    }
+    .menu-burger::before {
+        top: 0;
+    }
+    .menu-burger::after {
+        bottom: 0;
+    }
+    .menu-burger span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        transition: all .3s ease .3s;
+    }
+    .nav.active {
+        right: 0;
+    }
+    .nav a {
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-wrapper {
+        transform: translate3d(0px,0,0);
+    }
+}
+@media screen and (max-width: 900px) {
+    .new-cards {
+        display: none;
+    }
+    .slider {
+        max-width: 550px;
+        display: block;
+        margin-bottom: 3rem;
+    }
+    .brands-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 1rem 0 0;
+    }
+    .footer-categories {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 1rem;
+    }
+    .categories button {
+        margin: 0 1rem 1rem;
+    }
+    .footer-connection {
+        align-items: center;
+        width: 100%;
+    }
+    .footer-connection .email input {
+        width: 400px;
+    }
+    .footer-about p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px) {
+    .top-line {
+        display: none;
+    }
+    .fourth-section-text {
+        font-size: 28px;
+    }
+    .registration {
+        display: flex !important;
+    }
+    .new-season-left-text span {
+        font-size: 30px;
+    }
+    .first-slier {
+        max-width: 300px;
+    }
+    .slider {
+        max-width: 300px;
+    }
+    .footer-connection .email input {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .fourth-section-text {
+        font-size: 22px;
+    }
+}
