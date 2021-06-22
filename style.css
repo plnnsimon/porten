@@ -325,7 +325,7 @@ main {
     background-position:center;
     background-size: cover;
     display: flex;
-    flex: 55%;
+    flex: 45%;
     min-height: 730px;
 }
 .old-collection img {
@@ -336,7 +336,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    flex: 45%;
+    flex: 55%;
     width: 100%;
     padding: 0 5rem;
 }
