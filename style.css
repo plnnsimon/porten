@@ -248,6 +248,7 @@ main {
     transition: 0.3s;
     border: none;
     outline: none;
+    background: #000;
 }
 .card-img {
     width: 100%;
@@ -717,6 +718,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 4rem;
     }
     .footer-about {
         display: flex;
