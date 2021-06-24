@@ -297,6 +297,7 @@ main {
     font-size: 2rem;
     font-weight: 700;
     color: white;
+    text-align: center;
 }
 .catalog {
     font-family: "PT Sans", sans-serif;
@@ -363,6 +364,7 @@ main {
     border: 2px solid white;
     padding: 1rem 2rem;
     margin-bottom: 4rem;
+    text-align: center;
 }
 .old-collection-btn:hover {
     background: #b4b4b486;
@@ -594,15 +596,18 @@ footer {
 }
 .copyright span:last-child {
     font-weight: bold;
+    text-align: end;
 }
 
 /* MEDIA */
+@media screen and (max-width: 1400px) {
+    .new-card {
+        max-width: 200px;
+    }
+}
 @media screen and (max-width: 1100px) {
     .new-cards {
         max-width: 900px;
-    }
-    .new-card {
-        max-width: 200px;
     }
     .new-cards-container {
         padding: 0 5%;
@@ -610,6 +615,9 @@ footer {
 }
 
 @media screen and (max-width: 1000px) { 
+    .new-card {
+        max-width: 180px;
+    }
     .new-season-left-text hr {
         margin: 20px auto 30px;
     }
@@ -621,10 +629,11 @@ footer {
     }
     .old-collection {
         background-size: cover;
-        height: 500px;
+        min-height: 500px;
     }
     .new-season-right-content {
         margin-top: 3rem;
+        height: 450px;
     }
     .new-season-right {
         background-position: top;
@@ -712,7 +721,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
+        width: 90%;
     }
     .footer-content {
         flex-direction: column;
@@ -746,6 +755,9 @@ footer {
     .footer-about p {
         text-align: center;
     }
+    .footer-connection p {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 640px) {
     .top-line {
@@ -769,9 +781,34 @@ footer {
     .footer-connection .email input {
         width: 200px;
     }
+    .content-text {
+        padding: 20px 0;
+    }
+    .nav.active {
+        padding-top: 50px;
+    }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     .fourth-section-text {
         font-size: 22px;
+    }
+    .cards-container {
+        width: 200px;
+    }
+    .slider {
+        max-width: 200px;
+    }
+    .card-img {
+        width: 200px;
+    }
+    .logo {
+        width: 260px;
+        height: 260px;
+    }
+    .old-collection-content-text {
+        width: 220px;
+    }
+    .footer-connection .email input {
+        width: 150px;
     }
 }
