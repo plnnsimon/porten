@@ -24,10 +24,10 @@ header {
     display: flex;
     flex-direction: column;
 }
-header > * {
+/* header > * {
     transition: all .3s ease .3s;
     padding: 0 10%;
-}
+} */
 
 .top-line {
     height: 44px;
@@ -36,6 +36,9 @@ header > * {
     align-items: center;
     flex-direction: row;
     background: #000000;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .top-line-info {
@@ -85,7 +88,10 @@ a:hover {
     color: #969696;
     padding: 0 10px;
 }
-
+.second-line-wrapper {
+    width: 100%;
+    background: #0F0F0F;
+}
 .second-line {
     left: 0;
     display: flex;
@@ -93,8 +99,9 @@ a:hover {
     align-items: center;
     flex-direction: row;
     height: 80px;
-
-    background: #0F0F0F;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .second-line h2 {
@@ -122,8 +129,11 @@ a:hover {
     line-height: 18px;
     text-transform: uppercase;
     color: #969696;
-    padding: 30px 10px;
+    padding: 30px 20px;
     margin: 0 auto;
+}
+.nav a img {
+    margin: 0 5px;
 }
 .nav a:hover {
     color: #FFFFFF;
@@ -158,7 +168,7 @@ main {
     align-items: center;
     justify-content: space-around;
     margin: 0;
-    padding-top: 100px;
+    padding-top: 160px;
     height: auto;
 }
 .logo {
@@ -179,10 +189,9 @@ main {
     font-family: 'Post No Bills Jaffna';
     font-style: normal;
     font-weight: bold;
+    border-bottom: 2px solid #FFF;
 }
-.logo-inner hr {
-    width: 100%;
-}
+
 .logo-bottom {
     font-family: PT Sans, sans-serif;;
     font-style: normal;
@@ -198,8 +207,8 @@ main {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    width: 70%;
-    padding: 40px 50px 10%;
+    width: 730px;
+    padding: 80px 0 150px;
 }
 
 .second-section {
@@ -208,7 +217,6 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
-    min-height: 730px;
 }
 .new-season-left {
     flex: 55%;
@@ -216,9 +224,10 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    padding: 40px;
+    max-width: 1040px;
+    padding: 80px;
 }
+
 .new-season-left-text span {
     color: white;
     font-family: "Playfair Display", sans-serif;
@@ -229,9 +238,10 @@ main {
 .new-season-left-text hr {
     margin: 20px auto;
     width: 120px;
+    height: 4px;
 }
 .first-slier {
-    max-width: 600px;
+    width: 100%;
 }
 .cards-container {
     width: 100%;
@@ -269,8 +279,9 @@ main {
 .new-season-right {
     background-image: url('./photos/new-season-pick.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     margin: 0;
+    padding: 0;
     height: auto;
     width: 100%;
     display: flex;
@@ -290,7 +301,7 @@ main {
 .new-season-right-content hr {
     width: 120px;
     margin: 30px 0;
-    
+    height: 4px;
 }
 .new-season-right-content span {
     font-family: "Playfair Display", sans-serif;
@@ -345,6 +356,7 @@ main {
 .old-collection-content hr {
     margin: 2rem 0;
     width: 120px;
+    height: 4px;
 }
 .old-collection-content-title {
     font-family: "Playfair Display", sans-serif;
@@ -420,6 +432,7 @@ main {
     align-items:center;
     background: #0F0F0F;
     min-height: 360px;
+    padding: 0 10%;
 }
 .brands-section span {
     font-family: "Playfair Display", sans-serif;
@@ -472,9 +485,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    max-width: 1120px;
     height: 100%;
-    padding: 5rem 10% 0;
+    margin: 0 auto;
+    padding-top: 5rem;
 }
 .footer-about {
     display: flex;
@@ -566,6 +580,7 @@ footer {
     background: rgba(255, 255, 255, 0.4);
     outline: none;
     padding: 5px;
+    border: none;
 }
 .footer-connection .email input::placeholder {
     color: rgb(192, 192, 192);
@@ -583,10 +598,12 @@ footer {
     transition: all .3s;
 }
 .copyright {
+    max-width: 1120px;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 10%;
+    padding: 1rem 0;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 12px;
@@ -600,26 +617,50 @@ footer {
 }
 
 /* MEDIA */
+@media screen and (max-width: 1600px) {
+    .new-season-left {
+        max-width: 900px;
+    }
+}
 @media screen and (max-width: 1400px) {
+    .new-season-left {
+        max-width: 700px;
+    }
     .new-card {
         max-width: 216px;
     }
 }
 @media screen and (max-width: 1100px) {
+    .new-season-left {
+        max-width: 600px;
+    }
     .new-cards {
         max-width: 900px;
     }
     .new-cards-container {
         padding: 0 5%;
     }
+    .footer-content {
+        padding: 4rem 10%;
+    }
+    .copyright {
+        padding: 1rem 10%;
+    }
+    header > * {
+        padding: 0 10%;
+    }
 }
 
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1024px) { 
     .new-card {
         max-width: 180px;
     }
     .new-season-left-text hr {
         margin: 20px auto 30px;
+    }
+    .new-season-left {
+        max-width: 100%;
+        padding: 10%;
     }
     .second-section {
         flex-direction: column;
@@ -638,12 +679,6 @@ footer {
     .new-season-right {
         background-position: top;
     }
-    
-    header > * {
-        transition: all .3s ease .3s;
-        padding: 0 10%;
-    }
-    
     .menu-burger-container {
         display: flex;
         justify-content: center;
@@ -706,13 +741,11 @@ footer {
     .swiper-wrapper {
         transform: translate3d(0px,0,0);
     }
-}
-@media screen and (max-width: 900px) {
     .new-cards {
         display: none;
     }
     .slider {
-        max-width: 550px;
+        max-width: 750px;
         display: block;
         margin-bottom: 3rem;
     }
@@ -720,9 +753,23 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
         width: 90%;
     }
+    .brands-section {
+        padding: 0 5% 4rem;
+    }
+    .content-text {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 900px) {
+    
+    .slider {
+        max-width: 650px;
+        display: block;
+        padding: 0 5%;
+    }
+    
     .footer-content {
         flex-direction: column;
         justify-content: center;
@@ -759,6 +806,11 @@ footer {
         text-align: center;
     }
 }
+@media screen and (max-width: 720px) {
+    .brands-container {
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 640px) {
     .top-line {
         display: none;
@@ -788,7 +840,7 @@ footer {
         padding-top: 50px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     .fourth-section-text {
         font-size: 22px;
     }
@@ -797,6 +849,7 @@ footer {
     }
     .slider {
         max-width: 200px;
+        padding: 0;
     }
     .card-img {
         width: 200px;
