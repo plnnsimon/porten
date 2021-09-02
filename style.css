@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'Post No Bills Jaffna';
-	src: url('./fonts/PostNoBillsJaffna-Bold.eot');
-	src: local('☺'), url('fonts/PostNoBillsJaffna-Bold.woff') format('woff'), url('fonts/PostNoBillsJaffna-Bold.ttf') format('truetype'), url('fonts/PostNoBillsJaffna-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
+    font-family: 'Post No Bills Jaffna';
+    src: url('./fonts/PostNoBillsJaffna-Bold.eot');
+    src: local('☺'), url('fonts/PostNoBillsJaffna-Bold.woff') format('woff'), url('fonts/PostNoBillsJaffna-Bold.ttf') format('truetype'), url('fonts/PostNoBillsJaffna-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
@@ -15,15 +15,19 @@ body {
     width: 100%;
     min-height: 100vh;
 }
+
 body.lock {
     overflow: hidden;
 }
+
 header {
     top: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
+
+
 /* header > * {
     transition: all .3s ease .3s;
     padding: 0 10%;
@@ -57,6 +61,7 @@ header {
 .log-in {
     cursor: pointer;
 }
+
 .top-line span {
     margin-left: 15px;
 }
@@ -65,6 +70,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 a:hover {
     color: inherit;
 }
@@ -88,10 +94,12 @@ a:hover {
     color: #969696;
     padding: 0 10px;
 }
+
 .second-line-wrapper {
     width: 100%;
     background: #0F0F0F;
 }
+
 .second-line {
     left: 0;
     display: flex;
@@ -110,7 +118,6 @@ a:hover {
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
-
     color: #FFFFFF;
 }
 
@@ -132,19 +139,24 @@ a:hover {
     padding: 30px 20px;
     margin: 0 auto;
 }
+
 .nav a img {
     margin: 0 5px;
 }
+
 .nav a:hover {
     color: #FFFFFF;
     background: #1f1f1fb2;
     transition: ease .5s;
     cursor: pointer;
 }
+
+
 /* .nav img {
     padding: 30px 10px;
     margin: 0;
 } */
+
 .nav img:hover {
     color: #FFFFFF;
     background: #1F1F1F;
@@ -158,6 +170,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .first-section {
     background-image: url("./photos/main-photo.png");
     background-size: cover;
@@ -171,6 +184,7 @@ main {
     padding-top: 160px;
     height: auto;
 }
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -179,10 +193,9 @@ main {
     width: 320px;
     height: 320px;
     margin: 0 auto;
-    
     border: 4px solid white;
-    
 }
+
 .logo-top {
     font-size: 4rem;
     line-height: 4rem;
@@ -193,7 +206,8 @@ main {
 }
 
 .logo-bottom {
-    font-family: PT Sans, sans-serif;;
+    font-family: PT Sans, sans-serif;
+    ;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;
@@ -218,6 +232,7 @@ main {
     flex-wrap: nowrap;
     margin: 0;
 }
+
 .new-season-left {
     flex: 55%;
     display: flex;
@@ -232,24 +247,31 @@ main {
     color: white;
     font-family: "Playfair Display", sans-serif;
     font-weight: 700;
-    font-size: 36px;;
+    font-size: 36px;
+    ;
     text-transform: uppercase;
 }
+
 .new-season-left-text hr {
     margin: 20px auto;
     width: 120px;
     height: 4px;
 }
+
 .first-slier {
     width: 100%;
+    overflow: hidden;
 }
+
 .cards-container {
     width: 100%;
     margin-bottom: 1rem;
 }
+
 .cards {
     min-width: 0;
 }
+
 .card {
     display: flex;
     flex-direction: column;
@@ -260,15 +282,18 @@ main {
     outline: none;
     background: #000;
 }
+
 .card-img {
     width: 100%;
 }
+
 .card img {
     background: #191B1C;
     width: 100%;
     padding: 20% 0;
     cursor: pointer;
 }
+
 .card-text {
     background: #000;
     display: flex;
@@ -296,13 +321,14 @@ main {
     justify-content: center;
     margin-bottom: 4rem;
     align-items: center;
-
 }
+
 .new-season-right-content hr {
     width: 120px;
     margin: 30px 0;
     height: 4px;
 }
+
 .new-season-right-content span {
     font-family: "Playfair Display", sans-serif;
     font-size: 2rem;
@@ -310,6 +336,7 @@ main {
     color: white;
     text-align: center;
 }
+
 .catalog {
     font-family: "PT Sans", sans-serif;
     font-weight: normal;
@@ -317,6 +344,7 @@ main {
     border: 3px solid white;
     padding: 10px 20px;
 }
+
 .catalog:hover {
     background: #b4b4b486;
     cursor: pointer;
@@ -335,29 +363,33 @@ main {
 
 .old-collection {
     background-image: url("./photos/suit.png");
-    background-position:center;
+    background-position: center;
     background-size: cover;
     display: flex;
     flex: 45%;
     min-height: 730px;
 }
+
 .old-collection img {
     width: 100%;
 }
+
 .old-collection-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex: 55%;
     width: 100%;
     padding: 0 5rem;
 }
+
 .old-collection-content hr {
     margin: 2rem 0;
     width: 120px;
     height: 4px;
 }
+
 .old-collection-content-title {
     font-family: "Playfair Display", sans-serif;
     font-style: normal;
@@ -367,17 +399,20 @@ main {
     text-align: center;
     margin-top: 3rem;
 }
+
 .old-collection-content-text {
     text-align: center;
     margin-bottom: 4rem;
     font-size: 0.875rem;
 }
+
 .old-collection-btn {
     border: 2px solid white;
     padding: 1rem 2rem;
     margin-bottom: 4rem;
     text-align: center;
 }
+
 .old-collection-btn:hover {
     background: #b4b4b486;
     cursor: pointer;
@@ -389,7 +424,7 @@ main {
     font-weight: normal;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     height: auto;
     width: 100%;
@@ -404,36 +439,43 @@ main {
     width: 100%;
     max-width: 1120px;
 }
+
 .new-card {
     max-width: 260px;
     width: 100%;
     margin-bottom: 2rem;
 }
+
 .new-card img {
     background: #191B1C;
     width: 100%;
     padding: 20% 0;
     cursor: pointer;
 }
+
 .fourth-section-text {
     margin: 2rem 0 2rem 0;
     font-weight: 700;
     font-size: 36px;
 }
+
 .fourth-section hr {
     width: 120px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    height: 4px;
 }
+
 .brands-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    align-items:center;
+    align-items: center;
     background: #0F0F0F;
     min-height: 360px;
     padding: 0 10%;
 }
+
 .brands-section span {
     font-family: "Playfair Display", sans-serif;
     font-weight: 700;
@@ -443,20 +485,25 @@ main {
     text-align: center;
     padding: 2rem 0;
 }
+
 .brands-section hr {
     width: 120px;
 }
+
 .brands-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .brands-container div {
     margin: 1rem 1rem;
 }
+
 .brands-container div img {
     width: 100%;
 }
+
 .new-cards-container {
     padding: 0 10%;
 }
@@ -464,12 +511,15 @@ main {
 .registration {
     display: none !important;
 }
+
 .menu-burger {
     display: none;
 }
+
 .menu-burger-container {
     display: none;
 }
+
 .slider {
     display: none;
 }
@@ -481,6 +531,7 @@ footer {
     min-height: 400px;
     width: 100%;
 }
+
 .footer-content {
     display: flex;
     flex-direction: row;
@@ -490,6 +541,7 @@ footer {
     margin: 0 auto;
     padding-top: 5rem;
 }
+
 .footer-about {
     display: flex;
     flex-direction: column;
@@ -497,6 +549,7 @@ footer {
     width: 33.333%;
     margin: 0 1rem 0 0;
 }
+
 .footer-about span {
     font-family: "Playfair Display", sans-serif;
     font-weight: 400;
@@ -512,6 +565,7 @@ footer {
     font-size: 14px;
     line-height: 21px;
 }
+
 .footer-categories {
     display: flex;
     flex-direction: column;
@@ -519,6 +573,7 @@ footer {
     width: 33.333%;
     margin: 0 1rem;
 }
+
 .footer-categories span {
     font-family: "Playfair Display", sans-serif;
     font-weight: 400;
@@ -526,11 +581,13 @@ footer {
     font-size: 24px;
     margin-bottom: 40px;
 }
+
 .categories {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
 .categories button {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -541,17 +598,20 @@ footer {
     padding: 10px 20px;
     margin-bottom: 1rem;
 }
+
 .categories button:hover {
     background: rgba(136, 136, 136, 0.575);
     transition: all .3s;
 }
-.footer-connection{
+
+.footer-connection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 33.333%;
     margin: 0 1rem;
 }
+
 .footer-connection span {
     font-family: "Playfair Display", sans-serif;
     font-weight: 400;
@@ -559,6 +619,7 @@ footer {
     font-size: 24px;
     margin-bottom: 40px;
 }
+
 .footer-connection p {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -566,6 +627,7 @@ footer {
     font-size: 14px;
     line-height: 21px;
 }
+
 .footer-connection .email {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -576,12 +638,14 @@ footer {
     justify-content: center;
     margin-top: 40px;
 }
+
 .footer-connection .email input {
     background: rgba(255, 255, 255, 0.4);
     outline: none;
     padding: 5px;
     border: none;
 }
+
 .footer-connection .email input::placeholder {
     color: rgb(192, 192, 192);
     margin-left: 1rem;
@@ -593,10 +657,12 @@ footer {
     color: white;
     padding: 10px 20px;
 }
+
 .footer-connection .email button:hover {
     background: rgba(136, 136, 136, 0.575);
     transition: all .3s;
 }
+
 .copyright {
     max-width: 1120px;
     width: 100%;
@@ -608,20 +674,25 @@ footer {
     font-style: normal;
     font-size: 12px;
 }
+
 .copyright span:first-child {
     font-weight: normal;
 }
+
 .copyright span:last-child {
     font-weight: bold;
     text-align: end;
 }
 
+
 /* MEDIA */
+
 @media screen and (max-width: 1600px) {
     .new-season-left {
         max-width: 900px;
     }
 }
+
 @media screen and (max-width: 1400px) {
     .new-season-left {
         max-width: 700px;
@@ -630,6 +701,7 @@ footer {
         max-width: 216px;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .new-season-left {
         max-width: 600px;
@@ -646,12 +718,12 @@ footer {
     .copyright {
         padding: 1rem 10%;
     }
-    header > * {
+    header>* {
         padding: 0 10%;
     }
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
     .new-card {
         max-width: 180px;
     }
@@ -682,7 +754,7 @@ footer {
     .menu-burger-container {
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         width: 40px;
         height: 40px;
     }
@@ -739,7 +811,7 @@ footer {
         justify-content: center;
     }
     .swiper-wrapper {
-        transform: translate3d(0px,0,0);
+        transform: translate3d(0px, 0, 0);
     }
     .new-cards {
         display: none;
@@ -762,14 +834,13 @@ footer {
         width: 70%;
     }
 }
+
 @media screen and (max-width: 900px) {
-    
     .slider {
         max-width: 650px;
         display: block;
-        padding: 0 5%;
+        overflow: hidden;
     }
-    
     .footer-content {
         flex-direction: column;
         justify-content: center;
@@ -806,11 +877,13 @@ footer {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 720px) {
     .brands-container {
         justify-content: center;
     }
 }
+
 @media screen and (max-width: 640px) {
     .top-line {
         display: none;
@@ -840,6 +913,7 @@ footer {
         padding-top: 50px;
     }
 }
+
 @media screen and (max-width: 425px) {
     .fourth-section-text {
         font-size: 22px;
